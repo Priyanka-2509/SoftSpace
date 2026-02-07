@@ -129,7 +129,7 @@ The application uses **three primary tables**:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/SoftSpace.git
+git clone https://github.com/Priyanka-2509/SoftSpace.git
 ````
 
 ### 2. Database Setup
