@@ -1,4 +1,5 @@
-﻿# ✦ SoftSpace — Home Decor E-Commerce Platform
+````md
+# ✦ SoftSpace — Home Decor E-Commerce Platform
 
 SoftSpace is a premium, minimalist home decor e-commerce web application built using **ASP.NET Web Forms** and **SQL Server (SSMS)**.  
 The project focuses on combining **clean aesthetics** with **non-trivial backend logic**, including authentication, database-driven workflows, and a simulated real-world order tracking system.
@@ -58,7 +59,7 @@ All stages are handled without full page reloads.
 
 ---
 
-##  Tech Stack
+## 🛠 Tech Stack
 
 **Frontend**
 - ASP.NET Web Forms (.aspx)
@@ -84,7 +85,6 @@ All stages are handled without full page reloads.
 ---
 
 ## 📸 Screenshots
-
 
 ### 1️⃣ Cinematic Home Page
 ![Home Page](Images/home.png)
@@ -126,51 +126,75 @@ The application uses **three primary tables**:
 
 ---
 
-##  Installation & Setup (Local)
+## ⚙️ Installation & Setup (Local)
 
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/your-username/SoftSpace.git
-2. Database Setup
-Open SQL Server Management Studio (SSMS)
+````
 
-Create a database (e.g., HomeDecorDB)
+### 2. Database Setup
 
-Create required tables (Users, Products, Orders)
+* Open **SQL Server Management Studio (SSMS)**
+* Create a database (e.g., `HomeDecorDB`)
+* Create required tables (`Users`, `Products`, `Orders`)
+* Seed product data if required
 
-Seed product data if required
+### 3. Configure Connection String
 
-3. Configure Connection String
-Copy Web.config.example → Web.config
+* Copy `Web.config.example` → `Web.config`
+* Update the `MyDbConn` connection string with your local SQL Server details
 
-Update the MyDbConn connection string with your local SQL Server details
+### 4. Run the Project
 
-4. Run the Project
-Open the .sln file in Visual Studio
+* Open the `.sln` file in Visual Studio
+* Press **F5** to run using IIS Express
 
-Press F5 to run using IIS Express
+---
 
-💡 Logic Highlight: Order Tracking Engine
-Unlike basic CRUD projects, SoftSpace implements a state-machine style tracking system.
+## 💡 Logic Highlight: Order Tracking Engine
 
-A numeric ProgressLevel stored in the database controls:
+Unlike basic CRUD projects, SoftSpace implements a **state-machine style tracking system**.
 
-Visual progress bar width
+* A numeric `ProgressLevel` stored in the database controls:
 
-Active tracking stages
+  * Visual progress bar width
+  * Active tracking stages
+  * Order status text
 
-Order status text
-
-A backend hook inside the Login logic increments this value automatically, creating a realistic experience where orders advance while the user is away.
+* A backend hook inside the **Login logic** increments this value automatically, creating a realistic experience where orders advance while the user is away.
 
 This demonstrates:
 
-Persistent state handling
+* Persistent state handling
+* Backend-driven UI behavior
+* Practical use of database-controlled workflows
 
-Backend-driven UI behavior
+---
 
-Practical use of database-controlled workflows
+## 🚧 Project Status
 
+This project is **currently under development** and **not deployed yet**.
 
-👩‍💻 Author
-Priyanka Kumari
+It is maintained as:
+
+* An academic / learning project
+* A backend-focused portfolio project
+* A foundation for a future modern rewrite (ASP.NET MVC / ASP.NET Core)
+
+Future enhancements may include:
+
+* Live deployment
+* Improved security practices (password hashing, role-based access)
+* Migration to a modern architecture (MVC or ASP.NET Core)
+
+---
+
+## 👩‍💻 Author
+
+**Priyanka Kumari**
+Computer Science Student
+Focused on backend development, databases, and full-stack fundamentals
+
+```
+
