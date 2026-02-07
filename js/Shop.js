@@ -27,7 +27,4 @@ function orderNow(btn) {
         card.dataset.name +
         "\nStatus: Pending"
     );
-
-    // LATER:
-    // INSERT INTO Orders (UserId, ProductName, Status)
 }
