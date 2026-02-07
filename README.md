@@ -1,5 +1,4 @@
-````md
-# ✦ SoftSpace — Home Decor E-Commerce Platform
+# ✦ SoftSpace — Aesthetic Home Decor E-Commerce Platform
 
 SoftSpace is a premium, minimalist home decor e-commerce web application built using **ASP.NET Web Forms** and **SQL Server (SSMS)**.  
 The project focuses on combining **clean aesthetics** with **non-trivial backend logic**, including authentication, database-driven workflows, and a simulated real-world order tracking system.
@@ -172,29 +171,21 @@ This demonstrates:
 
 ---
 
-## 🚧 Project Status
+## 🚀 Project Status
 
-This project is **currently under development** and **not deployed yet**.
-
-It is maintained as:
-
-* An academic / learning project
-* A backend-focused portfolio project
-* A foundation for a future modern rewrite (ASP.NET MVC / ASP.NET Core)
-
-Future enhancements may include:
-
-* Live deployment
-* Improved security practices (password hashing, role-based access)
-* Migration to a modern architecture (MVC or ASP.NET Core)
+- Not deployed (runs locally using IIS Express)
+- Built for learning, academic evaluation, and portfolio demonstration
+- Fully functional with complete authentication, database, and order tracking workflows
+- Planned future enhancements include:
+  - Live deployment
+  - Security improvements (password hashing, role-based access)
+  - Migration to a modern architecture (ASP.NET MVC / ASP.NET Core)
 
 ---
 
 ## 👩‍💻 Author
 
 **Priyanka Kumari**
-Computer Science Student
-Focused on backend development, databases, and full-stack fundamentals
 
-```
+---
 
