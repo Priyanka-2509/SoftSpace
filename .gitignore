@@ -1,0 +1,21 @@
+﻿# Visual Studio / ASP.NET
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Configuration (IMPORTANT)
+Web.config
+
+# NuGet Packages
+packages/
+
+# Logs
+*.log
+
+# OS / System Files
+Thumbs.db
+.DS_Store

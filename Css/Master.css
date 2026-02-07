@@ -1,0 +1,141 @@
+﻿.no-padding-container {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Reset */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* --- THE FIX: HORIZONTAL ALIGNMENT --- */
+.lux-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.85); /* Glass effect */
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #F2E3DB;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.nav-container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 40px;
+    /* THIS FORCES HORIZONTAL */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO (STAY ON LEFT) */
+.nav-logo a {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7rem;
+    color: #5D4D42;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nav-logo span {
+    color: #A7BCB9;
+}
+/* Sage dot */
+
+/* MENU (CENTER) */
+.nav-menu {
+    display: flex;
+    flex-direction: row; /* Horizontal links */
+    gap: 35px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #8B7D73;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    position: relative;
+    transition: 0.3s;
+}
+/* AUTH BUTTONS (RIGHT) */
+.nav-auth {
+    display: flex;
+    flex-direction: row; /* Force Horizontal */
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-login {
+    text-decoration: none;
+    color: #8B7D73;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.btn-register {
+    text-decoration: none;
+    background-color: #D4B2B2; /* Soft Blush Pink */
+    color: white !important;
+    padding: 10px 25px;
+    border-radius: 50px; /* Pill Shape */
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: transform 0.3s, background 0.3s;
+}
+
+    .btn-register:hover {
+        background-color: #C29999;
+        transform: translateY(-2px);
+    }
+
+/* UNDERLINE ANIMATION FOR CENTER LINKS */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -5px;
+    left: 0;
+    background: #D4B2B2;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .nav-menu {
+        display: none;
+    }
+    /* Hide center links on mobile */
+}
+
+
+/* ANIMATION: Underline on Hover */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -5px;
+    left: 0;
+    background: #D4B2B2;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #A7BCB9;
+}

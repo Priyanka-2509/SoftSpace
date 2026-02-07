@@ -1,0 +1,117 @@
+﻿/* PAGE WRAPPER */
+.register-page {
+    display: flex;
+    min-height: 100vh;
+    background: #F2EDE7;
+}
+
+/* LEFT IMAGE */
+.register-image {
+    flex: 1.4;
+    background-image: url("../Images/Register.png"); /* YOU control this */
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 140px;
+    border-bottom-right-radius: 140px;
+}
+
+/* RIGHT PANEL */
+.register-form-wrapper {
+    flex: 1;
+    background: url("https://i.pinimg.com/1200x/fc/aa/86/fcaa864ec25f4c6aff200b863f2996d3.jpg");
+    background-repeat: no-repeat; /* move bg here */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+}
+
+/* FORM BOX */
+.register-form-box {
+    width: 100%;
+    max-width: 420px;
+}
+
+/* BRAND */
+.brand {
+    font-size: 0.90rem;
+    letter-spacing: 1px;
+    color: #8b6b52;
+    margin-bottom: 22px;
+    text-align: center; /* matches image */
+}
+
+/* HEADING */
+.register-form-box h2 {
+    font-size: 2.1rem;
+    font-weight: 400;
+    text-align: center; /* CENTERED like image */
+    margin-bottom: 35px;
+    color: #6b4a35;
+}
+
+/* INPUTS */
+.form-group {
+    margin-bottom: 18px;
+}
+
+    .form-group input,
+    .form-group select,
+    .form-input {
+        width: 100%;
+        padding: 14px 16px;
+        border-radius: 10px;
+        border: 1px solid #e1d6cc;
+        font-size: 0.9rem;
+        background: #ffffff;
+        color: #444;
+        box-sizing: border-box; /* CRUCIAL: prevents input from being too wide */
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* Ensure the split passwords actually sit side-by-side */
+    .form-group.split {
+        display: flex;
+        gap: 14px;
+    }
+
+        .form-group.split input {
+            flex: 1; /* Makes both password boxes equal width */
+        }
+
+/* BUTTON */
+.register-btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 18px;
+    border-radius: 30px;
+    border: none;
+    background: #c68b61;
+    color: #ffffff;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.register-btn:hover {
+    background: #b57952;
+}
+
+/* LOGIN LINK */
+.login-link {
+    margin-top: 22px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.login-link a {
+    color: #c68b61;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

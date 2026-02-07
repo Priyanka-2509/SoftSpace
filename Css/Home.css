@@ -1,0 +1,507 @@
+﻿:root {
+    --bg: #FDFBF7;
+    --sage: #7E8976;
+    --tan: #DBC4AC;
+    --blush: #F2E3DB;
+    --rose: #D4B2B2;
+    --text: #5D4D42;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text);
+    background: url("https://i.pinimg.com/1200x/e3/e6/0d/e3e60dc46f4efe247c03c21ebf2638f4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.py {
+    padding: 80px 0;
+}
+
+.center-text {
+    text-align: center;
+}
+
+/* --- FULL SCREEN HERO --- */
+.hero-fullscreen {
+    position: relative;
+    height: 90vh; /* Takes full screen height */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Textured beige background like the image */
+    background: url("https://i.pinimg.com/1200x/7c/aa/04/7caa0448a127525ebd55a5aeb6e4fb2d.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/* Subtle overlay to make white text pop on light backgrounds */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45); /* Very light dark tint */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3rem, 8vw, 5.5rem); /* Responsive font size */
+    line-height: 1.1;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.italic-text {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.hero-subtext {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Rounded Pill Button from the image */
+.btn-pill {
+    display: inline-block;
+    background-color: white;
+    color: #5D4D42; /* Soft Brown text */
+    padding: 15px 45px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.4s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+    .btn-pill:hover {
+        transform: translateY(-5px);
+        background-color: black;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+
+/* Simple Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 3.5rem;
+    }
+
+    .hero-subtext {
+        font-size: 1rem;
+    }
+}
+
+/* PRODUCTS */
+.divider {
+    width: 40px;
+    height: 2px;
+    background: url("https://i.pinimg.com/736x/4d/cf/f7/4dcff71e3a91a6028a4023b9ab0dd024.jpg");
+    margin: 10px auto 40px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.p-card {
+    background: #F2E3DB;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+    .p-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+    }
+
+.p-img {
+    height: 280px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+    .p-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.price {
+    color: var(--sage);
+    font-style: italic;
+    margin-top: -5px;
+}
+
+.btn-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+    .btn-row .btn, .b-view, .b-order {
+        flex: 1;
+        border: none;
+        padding: 8px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+.b-view {
+    background: #eee;
+}
+
+.b-order {
+    background: var(--rose);
+    color: white;
+}
+
+/* BLOG ARCS */
+.blog-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+}
+
+.b-arch {
+    height: 350px;
+    width: 260px;
+    border-radius: 130px 130px 0 0;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+    .b-arch img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+/* MOODBOARD ALIGNMENT */
+/* INSTAGRAM SECTION STYLING */
+.insta-section {
+    padding: 80px;
+    text-align: center;
+    background: white;
+}
+
+.insta-header {
+    margin-bottom: 50px;
+}
+
+    .insta-header h2 {
+        font-family: 'Playfair Display';
+        font-size: 2.5rem;
+        margin: 5px 0;
+    }
+
+.insta-handle {
+    color: var(--sage);
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+    .insta-handle:hover {
+        color: var(--rose);
+    }
+
+/* THE 6-COLUMN GRID */
+.insta-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 equal squares */
+    gap: 6px; /* No gaps for a professional "seamless" look */
+    width: 100%;
+}
+
+.insta-item {
+    position: relative;
+    aspect-ratio: 1 / 1; /* Makes every item a perfect square */
+    overflow: hidden;
+}
+
+    .insta-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+    }
+
+/* HOVER EFFECT */
+.insta-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(167, 188, 185, 0.6); /* Sage green tint */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.4s ease;
+    color: white;
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.insta-item:hover img {
+    transform: scale(1.1);
+}
+
+.insta-item:hover .insta-overlay {
+    opacity: 1;
+}
+
+/* Responsive: 3 columns on tablets, 2 on phones */
+@media (max-width: 1024px) {
+    .insta-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .insta-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* FOOTER */
+.main-footer {
+    background: #F4E8E1;
+    padding: 50px;
+    border-top: 1px solid #EEE;
+    color: #5D4D42;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 220px;
+}
+
+    .footer-col h3 {
+        font-family: 'Playfair Display';
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .footer-col h4 {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #7E8976;
+        margin-bottom: 15px;
+    }
+
+    .footer-col p, .footer-col a {
+        font-size: 0.85rem;
+        color: black;
+        text-decoration: none;
+        line-height: 1.8;
+        transition: 0.3s;
+    }
+
+        .footer-col a:hover {
+            color: #D4B2B2;
+        }
+/* Blush hover effect */
+
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #F2F0EB;
+    text-align: center;
+    font-size: 0.75rem;
+    opacity: 0.5;
+    letter-spacing: 1px;
+}
+
+/* --- THE CENTERED MODAL LOGIC --- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Darkened background like the image */
+    backdrop-filter: blur(5px); /* Soft blur effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; /* Above everything */
+}
+
+.modal-box {
+    background: white;
+    border-radius: 20px; /* Rounded like the image */
+    position: relative;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+    animation: popIn 0.3s ease-out;
+    padding: 40px;
+    max-width: 90%;
+}
+
+@keyframes popIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.details-box {
+    width: 850px;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.address-box {
+    width: 450px;
+    text-align: center;
+}
+
+.modal-split {
+    display: flex;
+}
+
+.m-left {
+    flex: 1;
+    height: 500px;
+}
+
+    .m-left img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.m-right {
+    flex: 1.2;
+    padding: 50px;
+    text-align: left;
+}
+
+.close-x {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 30px;
+    color: #ccc;
+    text-decoration: none;
+    z-index: 10;
+}
+
+    .close-x:hover {
+        color: var(--sage);
+    }
+
+.m-input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    margin: 20px 0;
+    font-family: 'Poppins';
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Make sure buttons in modal match your theme */
+.modal-box .b-order {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+/* Ensure the ASP TextBox looks like your original input */
+.input-style {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 0.9rem;
+    box-sizing: border-box; /* Crucial for ASP.NET controls */
+}
+
+/* Style for the My Orders link in home page */
+.btn-hero-secondary {
+    display: inline-block;
+    background-color: #F2E3DB;
+    color: #5D4D42; /* Soft Brown text */
+    padding: 15px 45px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.4s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
