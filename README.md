@@ -1,4 +1,4 @@
-﻿# ✦ SoftSpace — Aesthetic Home Decor E-Commerce Platform
+﻿# ✦ SoftSpace — Home Decor E-Commerce Platform
 
 SoftSpace is a premium, minimalist home decor e-commerce web application built using **ASP.NET Web Forms** and **SQL Server (SSMS)**.  
 The project focuses on combining **clean aesthetics** with **non-trivial backend logic**, including authentication, database-driven workflows, and a simulated real-world order tracking system.
