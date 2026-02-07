@@ -7,7 +7,7 @@ This project was built to strengthen full-stack fundamentals such as server-side
 
 ---
 
-## 🎨 Aesthetic & Design Philosophy
+## Aesthetic & Design Philosophy
 
 - **Color Palette:** Sage Green, Dusty Rose, Warm Cream  
 - **Design Goal:** Calm, modern, and luxury-inspired UI  
@@ -151,7 +151,7 @@ git clone https://github.com/your-username/SoftSpace.git
 
 ---
 
-## 💡 Logic Highlight: Order Tracking Engine
+##  Logic Highlight: Order Tracking Engine
 
 Unlike basic CRUD projects, SoftSpace implements a **state-machine style tracking system**.
 
@@ -171,7 +171,7 @@ This demonstrates:
 
 ---
 
-## 🚀 Project Status
+## Project Status
 
 - Not deployed (runs locally using IIS Express)
 - Built for learning, academic evaluation, and portfolio demonstration
