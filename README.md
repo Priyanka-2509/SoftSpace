@@ -24,7 +24,7 @@ This project was built to strengthen full-stack fundamentals such as server-side
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 ### 🔐 User Authentication
 - Register & Login system
@@ -58,7 +58,7 @@ All stages are handled without full page reloads.
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 **Frontend**
 - ASP.NET Web Forms (.aspx)
@@ -126,7 +126,7 @@ The application uses **three primary tables**:
 
 ---
 
-## ⚙️ Installation & Setup (Local)
+##  Installation & Setup (Local)
 
 ### 1. Clone the Repository
 ```bash
@@ -171,10 +171,6 @@ Backend-driven UI behavior
 
 Practical use of database-controlled workflows
 
-🚀 Project Status
-Not deployed
-
-Built for learning, academic evaluation, and portfolio demonstration
 
 👩‍💻 Author
 Priyanka Kumari
