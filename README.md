@@ -85,24 +85,23 @@ All stages are handled without full page reloads.
 
 ## 📸 Screenshots
 
-> Upload your screenshots inside a `screenshots/` folder and replace the links below.
 
 ### 1️⃣ Cinematic Home Page
-![Home Page](Image/home.png)
+![Home Page](Images/home.png)
 
 Full-screen hero section with dynamic product grid.
 
 ---
 
 ### 2️⃣ Multi-Stage Checkout Flow
-![Product & Payment Flow](screenshots/checkout.png)
+![Product & Payment Flow](Images/checkout.png)
 
 Seamless transition from product details → address → payment modal.
 
 ---
 
 ### 3️⃣ Orders & Tracking System
-![Orders Page](screenshots/orders.png)
+![Orders Page](Images/orders.png)
 
 Card-based order history with a custom visual delivery tracker.
 
