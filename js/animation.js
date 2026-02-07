@@ -14,7 +14,7 @@
                 // Add 'show' class to trigger CSS transition
                 entry.target.classList.add("show");
 
-                // Optional: Stop observing once animated (for run-once animation)
+                //  Stop observing once animated (for run-once animation)
                 observer.unobserve(entry.target);
             }
         });
