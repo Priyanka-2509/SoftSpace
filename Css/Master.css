@@ -3,14 +3,12 @@
     margin: 0 !important;
 }
 
-/* Reset */
 ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-/* --- THE FIX: HORIZONTAL ALIGNMENT --- */
 .lux-navbar {
     position: sticky;
     top: 0;
@@ -26,7 +24,6 @@ ul {
     max-width: 1250px;
     margin: 0 auto;
     padding: 0 40px;
-    /* THIS FORCES HORIZONTAL */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -45,12 +42,11 @@ ul {
 .nav-logo span {
     color: #A7BCB9;
 }
-/* Sage dot */
 
 /* MENU (CENTER) */
 .nav-menu {
     display: flex;
-    flex-direction: row; /* Horizontal links */
+    flex-direction: row; 
     gap: 35px;
 }
 
@@ -64,10 +60,10 @@ ul {
     position: relative;
     transition: 0.3s;
 }
-/* AUTH BUTTONS (RIGHT) */
+
 .nav-auth {
     display: flex;
-    flex-direction: row; /* Force Horizontal */
+    flex-direction: row; 
     align-items: center;
     gap: 15px;
 }
@@ -81,10 +77,10 @@ ul {
 
 .btn-register {
     text-decoration: none;
-    background-color: #D4B2B2; /* Soft Blush Pink */
+    background-color: #D4B2B2; 
     color: white !important;
     padding: 10px 25px;
-    border-radius: 50px; /* Pill Shape */
+    border-radius: 50px; 
     font-size: 0.85rem;
     font-weight: 500;
     transition: transform 0.3s, background 0.3s;
@@ -116,7 +112,6 @@ ul {
     .nav-menu {
         display: none;
     }
-    /* Hide center links on mobile */
 }
 
 
