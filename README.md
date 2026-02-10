@@ -58,7 +58,7 @@ All stages are handled without full page reloads.
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 **Frontend**
 - ASP.NET Web Forms (.aspx)
@@ -83,23 +83,23 @@ All stages are handled without full page reloads.
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
-### 1️⃣ Cinematic Home Page
+###  Cinematic Home Page
 ![Home Page](Images/home.png)
 
 Full-screen hero section with dynamic product grid.
 
 ---
 
-### 2️⃣ Multi-Stage Checkout Flow
+###  Multi-Stage Checkout Flow
 ![Product & Payment Flow](Images/checkout.png)
 
 Seamless transition from product details → address → payment modal.
 
 ---
 
-### 3️⃣ Orders & Tracking System
+###  Orders & Tracking System
 ![Orders Page](Images/orders.png)
 
 Card-based order history with a custom visual delivery tracker.
