@@ -26,17 +26,17 @@ This project was built to strengthen full-stack fundamentals such as server-side
 
 ##  Key Features
 
-### 🔐 User Authentication
+###  User Authentication
 - Register & Login system
 - Regex-based input validation
 - Session-based authentication and access control
 
-### 🛍 Dynamic Product Gallery
+### Dynamic Product Gallery
 - Products fetched directly from **SQL Server**
 - Data-bound **Repeater** for scalable listings
 - Image, price, and description loaded dynamically
 
-### 🧾 Multi-Stage Smart Checkout Flow
+### Multi-Stage Smart Checkout Flow
 1. **Product Discovery** — immersive product detail modal  
 2. **Address Validation** — server-side validation for delivery info  
 3. **Payment Simulation**  
@@ -45,12 +45,12 @@ This project was built to strengthen full-stack fundamentals such as server-side
 
 All stages are handled without full page reloads.
 
-### 📦 Interactive Order Tracking System
+### Interactive Order Tracking System
 - Orders stored permanently in SQL Server
 - Visual tracking system with multiple delivery stages
 - Status progression displayed using a custom vertical tracker
 
-### ⏳ Session-Based Order Progression (Logic Highlight)
+###  Session-Based Order Progression (Logic Highlight)
 - Each time a user logs in, their existing orders automatically progress:
   - *Placed → In Transit → Out for Delivery → Arrived*
 - This simulates the **passage of time** and real-world logistics behavior
@@ -106,7 +106,7 @@ Card-based order history with a custom visual delivery tracker.
 
 ---
 
-## 💾 Database Schema Overview
+##  Database Schema Overview
 
 The application uses **three primary tables**:
 
@@ -125,7 +125,7 @@ The application uses **three primary tables**:
 
 ---
 
-## ⚙️ Installation & Setup (Local)
+##  Installation & Setup (Local)
 
 ### 1. Clone the Repository
 ```bash
